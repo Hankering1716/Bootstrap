@@ -709,7 +709,155 @@
                     </div>
                   </div>
 
+                  <div class="guide Pagination">
+                    <h2>Basic pagination</h2>
+                    <div class="container mt-3">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <h2>Active state</h2>
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                  </div>
+                  <h2>Disabled state is used for unclickable links</h2>
+                  <ul class="pagination">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                  <h2>Pagination size</h2>
+                  <ul class="pagination pagination-lg">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                  <ul class="pagination pagination-sm">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
 
+                  <h2>Pagination alignment</h2>
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                  </ul>
+
+                  <ul class="pagination justify-content-end">
+                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                  </ul>
+                  <h2>Bread crumbs</h2>
+                  <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Photos</a></li>
+                    <li class="breadcrumb-item"><a href="#">Summer 2023</a></li>
+                  </ul>
+            </div>
+            <hr>
+            <div class="guide list groups">
+                <div class="container mt-3">
+                    <ul class="list-group">
+                        <li class="list-group-item">First Item</li>
+                        <li class="list-group-item">Second item</li>
+                        <li class="list-group-item">Third item</li>
+                    </ul>
+                    <hr>                    
+
+                    <ul class="list-group">
+                        <li class="list-group-item active bg-dark">First Item</li>
+                        <li class="list-group-item">Second item</li>
+                        <li class="list-group-item">Third item</li>
+                    </ul>
+                    <hr>
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-action">First Item</li>
+                        <li class="list-group-item list-group-item-action">Second item</li>
+                        <li class="list-group-item list-group-item-action">Third item</li>
+                    </ul>
+                    <hr>
+                    <ul class="list-group list-group-flush"> <!--It removes borders and corners: flush-->
+                        <li class="list-group-item ">First Item</li>
+                        <li class="list-group-item">Second item</li>
+                        <li class="list-group-item">Third item</li>
+                    </ul>
+                    <hr>
+
+                    <ul class="list-group list-group-numbered">
+                        <li class="list-group-item">First Item</li>
+                        <li class="list-group-item">Second item</li>
+                        <li class="list-group-item">Third item</li>
+                    </ul>
+                    <hr>
+        
+
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">First Item</li>
+                        <li class="list-group-item">Second item</li>
+                        <li class="list-group-item">Third item</li>
+                    </ul>
+                    <hr>
+
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-success">success Item</li>
+                        <li class="list-group-item list-group-item-secondary">secondary item</li>
+                        <li class="list-group-item list-group-item-info">info item</li>
+                        <li class="list-group-item list-group-item-warning">Warning item</li>
+                        <li class="list-group-item list-group-item-danger">danger item</li>
+                    </ul>
+                    <hr>
+        
+                    
+                    <ul class="list-group ">
+                        <li class="list-group-item list-group-item-success list-group-item-action">success Item</li>
+                        <li class="list-group-item list-group-item-secondary list-group-item-action ">secondary item</li>
+                        <li class="list-group-item list-group-item-info list-group-item-action">info item</li>
+                        <li class="list-group-item list-group-item-warning list-group-item-action">Warning item</li>
+                        <li class="list-group-item list-group-item-danger list-group-item-action">danger item</li>
+                    </ul>
+
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Inbox
+                            <span class="badge bg-primary rounded-pill">12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Second item
+                            <span class="badge bg-primary rounded-pill">54</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center" >Third item
+                            <span class="badge bg-primary rounded-pill">99+</span>
+                        </li>
+                    </ul>
+                    <hr>
+        
+                    
+                </div>
+            </div>
+
+            <div class="guide Cards">
+                <div class="container mt-3">
+                    
+                </div>
             </div>
 
         </body>
