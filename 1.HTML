@@ -1283,7 +1283,7 @@ Tip: Add a white text color to all links in the navbar with the .navbar-dark cla
                 <span class="carousel-control-next-icon"></span>
               </button>
             </div>
-            </div>
+            </div> <hr>
             <!-- Class	Description
             .carousel	Creates a carousel
             .carousel-indicators	Adds indicators for the carousel. These are the little dots at the bottom of each slide (which indicates how many slides there are in the carousel, and which slide the user are currently viewing)
@@ -1297,5 +1297,59 @@ Tip: Add a white text color to all links in the navbar with the .navbar-dark cla
             
         </div>
 
+        <div class="guide Modal">
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Open modal
+                  </button>
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal Heading</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          Modal body..
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+        </div>
+
+        <div class="guide Tooltip">
+            <div class="container mt-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Horray!">Hover over me!</button>
+            </div> <hr>
+
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!">Hover</a>
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hooray!">Hover</a>
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Hooray!">Hover</a>
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Hooray!">Hover</a>
+        </div>
+
+        <script>
+            var tooltiptrigger = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltiplist = tooltiptrigger.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+            </script>
+            
+            <div class="guide Popover">
+                <div class="container mt-3">
+                    
+                </div>
+            </div>
 </body>
 </html>
