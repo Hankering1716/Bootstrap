@@ -1347,9 +1347,47 @@ Tip: Add a white text color to all links in the navbar with the .navbar-dark cla
             </script>
             
             <div class="guide Popover">
-                <div class="container mt-3">
-                    
-                </div>
+                <div class="container mt-5">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="popover header" data-bs-content="Some content inside the popover">Toggle popover</button>
+                        <button href="#" title="popover header" CLASS="btn btn-primary" data-bs-toggle="popover" data-bs-placement="top" data-content="Content">Top</button>
+                        <button href="#" title="Header" data-bs-toggle="popover" CLASS="btn btn-primary" data-bs-placement="bottom" data-content="Content">Bottom</button>
+                        <button href="#" title="Header" data-bs-toggle="popover" CLASS="btn btn-primary" data-bs-placement="left" data-content="Content">Left</button>
+                        <button href="#" title="Header" data-bs-toggle="popover"CLASS="btn btn-primary"  data-bs-placement="right" data-content="Content">Right</button>
+                        
+                        <a href="#" title="popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Click">Elo</a>
+                        <a href="#" title="Header" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Popover text">Hover over me</a>   
+                    </div>
+                        <script>
+                            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                            var popoverList = popoverTriggerList.map(function (EL) {
+                                return new bootstrap.Popover(EL)
+                            })
+                        </script>
+<hr>
+                        <div class=" guide Toasts">
+                            <button class="btn btn-primary" id="toastbtn">Click me</button>
+                            <script>
+            
+                    document.getElementById("toastbtn").onclick = function() {
+                    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+                    var toastList = toastElList.map(function(toastEl) {
+                        return new bootstrap.Toast(toastEl)
+                    })
+                    toastList.forEach(toast => toast.show()) 
+                    }
+                            </script>
+                            <Div class="container-mt3">
+                                <div class="toast show">
+                                    <div class="toast-header">
+                                        Toast header
+                                        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                                    </div>
+                                    <div class="toast-body text-danger">
+                                        Toast body
+                                    </div>
+                                </div>
+                            </Div>
+                        </div>
             </div>
 </body>
 </html>
