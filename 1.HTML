@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="1.css">
     </head>
     <div class="guide containers">
-        <body>
+        <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
             <div class="container">
                 <h1>BootStrap Usage</h1>
                 <p>Bootstrap: container div</p>
@@ -1389,5 +1389,44 @@ Tip: Add a white text color to all links in the navbar with the .navbar-dark cla
                             </Div>
                         </div>
             </div>
-</body>
+            <div class="guide Scrollspy">
+                <div class="container mt-3">
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                        <ul class="navbar-nav">
+                            <li><a href="#section1">Section 1</a></li>
+                        </ul>
+                    </nav>
+
+                    <div id="section1">
+                        <h1>Section 1</h1>
+                        <P>Try to scroll this page and look at navigation bar</P>
+                    </div>
+                </div>
+            </div> <hr>
+
+            <div class="guide Offcanvas">
+                <div class="offcanvas offcanvas-start" id="demo2">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Heading</h1>
+                        <button class="btn-close text-reset btn" data-bs-dismiss="offcanvas">
+
+                        </button>
+
+                        <div class="offcanvas-body">
+                            <p>LRFADS</p>
+                            <P>HAHA</P>
+                            <button class="btn btn-secondary" type="button">A Button</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#demo2">Open offcanvas sidebar</button>
+       
+            </div>
+            <Div class="guide utilities">
+                    <div class="container mt-3">
+                        
+                    </div>
+            </Div>
+        </body>
+
 </html>
