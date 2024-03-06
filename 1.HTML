@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html lang="pl-PL" data-bs-theme="dark">
     <head>
         <title>Bootstrap 5</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -1422,11 +1422,124 @@ Tip: Add a white text color to all links in the navbar with the .navbar-dark cla
                 <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#demo2">Open offcanvas sidebar</button>
        
             </div>
-            <Div class="guide utilities">
+            <Div class="guide Utilities">
                     <div class="container mt-3">
-                        
+                        <span class="border">Border</span>
+                        <span class="border border-0">Border</span>
+                        <span class="border border-top-0">Border</span>
+                        <span class="border border-end-0">Border</span>
+                        <span class="border border-bottom-0">Border</span>
+                        <span class="border border-start-0">Border</span>
+                        <br>
+                        <span class="border-top">Border</span>
+                        <span class="border-end">Border</span>
+                        <span class="border-bottom">Border</span>
+                        <span class="border-left">Border</span>
+                        <br>
+
+                        <span class="border border-1">Border</span>
+                        <span class="border border-2">Border</span>
+                        <span class="border border-3">Border</span>
+                        <span class="border border-4">Border</span>
+                        <span class="border border-5">Border</span>
+
+                        <br>
+
+                        <span class="border border-primary">Border</span>
+                        <span class="border border-secondary">Border</span>
+                        <span class="border border-success">Border</span>
+                        <span class="border border-danger">Border</span>
+                        <span class="border border-warning">Border</span>
+                        <span class="border border-info">Border</span>
+                        <span class="border border-light">Border</span>
+                        <span class="border border-dark">Border</span>
+                        <span class="border border-white">Border</span>
+
+                        <br>
+
+                        <span class="border rounded">Border</span>
+                        <span class="border rounded-top">Border</span>
+                        <span class="border rounded-end">Border</span>
+                        <span class="border rounded-bottom">Border</span>
+                        <span class="border rounded-start">Border</span>
+                        <span class="border rounded-circle">Border</span>
+                        <span class="border rounded-pill" style="width:130px;">Border</span>
+                        <span class="border rounded-0">Border</span>
+                        <span class="border rounded-1">Border</span>
+                        <span class="border rounded-2">Border</span>
+                        <span class="border rounded-3">Border</span>
+                        <span class="border rounded-4">Border</span>
+                        <span class="border rounded-5">Border</span>
+                        <div class="clearfix">
+                            <span class="border float-start">Float left</span>
+                            <span class="border float-end">Float right</span>
+                        </div>
+
+                        <Div class="mx-auto bg-warning" style="width:150px;">Centered</Div>
+                        <div class="w-25 bg-warning">Width 25%</div>
+                        <div class="w-50 bg-warning">Width 50%</div>
+                        <div class="w-75 bg-warning">Width 75%</div>
+                        <div class="w-100 bg-warning">Width 100%</div>
+                        <div class="w-auto bg-warning">Auto Width</div>
+                        <div class="mw-100 bg-warning">Max Width 100%</div>
+                        <br>
+<!-- 
+                        <div style="height:200px;background-color:#ddd">
+                            <div class="h-25 bg-warning">Height 25%</div>
+                            <div class="h-50 bg-warning">Height 50%</div>
+                            <div class="h-75 bg-warning">Height 75%</div>
+                            <div class="h-100 bg-warning">Height 100%</div>
+                            <div class="h-auto bg-warning">Auto Height</div>
+
+                          </div> -->
                     </div>
+                    <div class="shadow-none p-4 mb-4  text-primary bg-light">No shadow</div>
+                    <div class="shadow-sm p-4 mb-4 bg-white">Small shadow</div>
+                    <div class="shadow p-4 mb-4  text-primary  bg-white">Default shadow</div>
+                    <div class="shadow-lg p-4 mb-4 text-primary  bg-white">Large shadow</div>
+
+
+                    <span class="align-baseline">baseline</span>
+                    <span class="align-top">top</span>
+                    <span class="align-middle">middle</span>
+                    <span class="align-bottom">bottom</span>
+                    <span class="align-text-top">text-top</span>
+                    <span class="align-text-bottom">text-bottom</span>
+
+
+                    <div class="ratio ratio-1x1">
+                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                      </div>
+                      
+                      <!-- Aspect ratio 4:3 -->
+                      <div class="ratio ratio-4x3">
+                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                      </div>
+                      
+                      <!-- Aspect ratio 16:9 -->
+                      <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                      </div>
+                      
+                      <!-- Aspect ratio 21:9 -->
+                      <div class="ratio ratio-21x9">
+                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                      </div>
+
+<hr>
+                      <div class="visible">I am visible</div>
+                      <div class="invisible">I am invisible</div>
+
+                      <button class="btn btn-close"></button>
+
+                      <span class="visually-hidden">I will be hidden on all screens except for screen readers.</span>
             </Div>
+
+            <div class="guide DarkMode">
+                <!-- By default, bootstrap pages have a white (light) background color.
+
+If you want to change the whole page to a darker color, you can add data-bs-theme="dark" to the <html> element: -->
+            </div>
         </body>
 
 </html>
