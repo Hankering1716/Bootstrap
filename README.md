@@ -1,4 +1,8 @@
-On this app you can check every thing that you can use in your project from bootstrap. 
+By this page  you can check every thing that you can use on your project from bootstrap.
+
+Like images, tables, grids,images. 
+
+
 
 Source : https://www.w3schools.com/bootstrap5/index.php
 
