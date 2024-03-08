@@ -1601,10 +1601,76 @@ If you want to change the whole page to a darker color, you can add data-bs-them
 
             <div class="guide Select Menus">
                 <div class="container mt-3">
+                        <select class="form-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select> 
+                        <select class="form-select form-select-lg">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <select class="form-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <select class="form-select form-select-sm">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+
+                        <select class="form-select" disabled>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+
+                        <label for="browser" class="form-label">Choose your browser from the list:
+                            <input class="form-control" list="browsers" name="browser" id="browser">
+                            <datalist id="browsers">
+                                <option value="Edge"></option>
+                                <option value="Firefox"></option>
+                                <option value="Chrome"></option>    
+                                <option value="Opera"></option>
+                                <option value="Safari"></option>
+                            </datalist>
+                        </label>
 
                 </div>
-            </div>
+            </div> <hr>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+                <label class="form-check-label">Option 1</label>
 
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option1
+                    <label class="form-check-label" for="radio1"></label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
+                    <label class="form-check-label" for="radio2"></label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" disabled>Option3 
+                    <label class="form-check-label"></label>
+                </div>
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                    <label class="form-check-label" for="mySwitch">Dark mode</label>
+                </div>
+
+
+            </div> <hr>
+
+            <Div class="guide Range">
+                <div class="container mt-3">
+                    
+                </div> 
+            </Div> <hr>
         </body>
 
 </html>
