@@ -1,4 +1,4 @@
-By this page  you can check every thing that you can use on your project from bootstrap.
+By this page  you can check every thing from BOOTSTRAP and you can use it your project! 
 
 Like images, tables, grids,images. 
 
