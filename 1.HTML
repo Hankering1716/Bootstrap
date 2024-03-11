@@ -1733,6 +1733,62 @@ If you want to change the whole page to a darker color, you can add data-bs-them
                   </div>
                   
             </div><hr>
+
+            <div class="guide Floating Labels">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="form-floating mt-3 mb-3">
+                    <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    <label for="pwd">Password</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here">
+
+                    </textarea>
+                    <label for="comment">Comments</label>
+                </div>
+
+                <div class="form-floating">
+                    <select class="form-select" id="sell" name="selllist">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <label for="sell" class="form-label">Select list (select one) :</label>
+                </div>
+            </div>
+
+            <div clas="guide Form Validation">
+                <form action="/action_page.php" class="was-validated">
+                    <div class="mb-3 mt-3">
+                        <label for="uname" class="form-label">Username:</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field</div>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                        <label class="form-check-label" for="myCheck">I agree on blabla.</label>
+                        <div class="valid-feedback">Valid.</div>
+                        <Div class="invalid-feedback">CHeck this chekbox to continue.</Div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div> <hr>
+
+            <div class="guide Grid system">
+
+            </div> <hr>
         </body>
 
 </html>
